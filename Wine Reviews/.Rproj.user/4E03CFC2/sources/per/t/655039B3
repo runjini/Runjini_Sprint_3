@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1513227840673.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "655039B3",
+    "lastKnownWriteTime" : 4345407744,
+    "last_content_update" : 1513227840673,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "EC296726",
+        "caption" : "winemag_data_130k_v2_2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=winemag_data_130k_v2_2&cache_key=EC296726",
+        "displayedObservations" : "129971",
+        "environment" : "",
+        "object" : "winemag_data_130k_v2_2",
+        "preview" : "0",
+        "totalObservations" : "129971",
+        "variables" : "14"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
