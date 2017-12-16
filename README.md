@@ -3,7 +3,9 @@
 **Author:** Runjini Murthy
 
 __*Project Description:*__
-Using a wine review data set from Kaggle, SQL and R will be used to perform basic analysis on the data contained within this file.  Within SQL, the following queries will be made:
+Using a wine review data set from Kaggle, SQL and R will be used to perform basic analysis on the data contained within this file.  The Kaggle file data was scraped from WineEnthusiast during the week of November 24th, 2017. 
+
+Within SQL, the following queries will be made:
 1. How many countries are represented on this list?
 2. What is the max points/rating for a given wine?
 3. What is the minimum points/rating for a given wine?
@@ -22,6 +24,7 @@ Additionally in R, the following questions will be asked:
 4. How do you filter?
 5. How do you perform a sum/mean on a subset of data?
 
-*A description of the files attached, and any instructions for someone downloading it to use*
+*Files*
+A subset of the wine data as well as an R file working with this data has been uploaded to my personal repo.
 
 *Here is a description of other things I hope to do with this project for future reference*
