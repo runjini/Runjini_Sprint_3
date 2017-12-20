@@ -158,7 +158,7 @@ Result:
 
 ### R Functions/Instructions
 
-Reference R function equivalents of SQL queries in Wine_Reviews_R_Script.R file provided.
+Reference R function equivalents of SQL queries in [Wine_Reviews_R_Script.R](https://github.com/runjini/Sprint_3_Wine/blob/master/Wine_Reviews_R_Script.R) file provided.
 
 ### Helpful Links
 
