@@ -158,156 +158,19 @@ Result:
 
 ### R Functions/Instructions
 
-*What is the sum of points in this table?*  
-*(Note: This is not a real question I want to ask, but I'm not sure how to filter yet, and I wanted to ask a basic question.)*
+Reference R function equivalents of SQL queries in Wine_Reviews_R_Script.R file provided.
 
-`sum(winemag_data_130k_v2[['points']])`
+### Helpful Links
 
-[1] 11495563
 
+[Double vs. integer](http://uc-r.github.io/integer_double): I saw col_double() for price and col_integer() for points.  "The two most common numeric classes used in R are integer and double (for double precision floating point numbers). R automatically converts between these two classes when needed for mathematical purposes.  In this case, it makes sense because the points are all integers, whereas the price could have cents, i.e. decimal with two floating digits.
 
-*What is the mean of points in this table?*
+[R data frame manipulation](https://www.r-bloggers.com/dataframe-manipulation-in-r-from-basics-to-dplyr/)
 
-`mean(wine[['points']])`
+[Basic sum function in R](https://stackoverflow.com/questions/9676212/how-to-sum-all-values-of-a-column-of-in-a-data-frame)
 
-[1] 88.44714
+[Subset instruction/function in R](https://www.statmethods.net/management/subset.html)
 
-*What is the mean of points and price for wines priced over 500 dollars in this table?*
+[Count unique values in a column in R](https://discuss.analyticsvidhya.com/t/count-number-of-distinct-values-in-a-column-of-a-data-table-in-r/1124)
 
-`wines_over_500 <- subset(wine, price > 500)
-mean(wines_over_500)`
-
-`mean(wines_over_500[['points']])`
-
-[1] 95.68132
-
-`mean(wines_over_500[['price']])`
-
-[1] 854.1868
-
-*What are the unique number of countries represented in the wine table?  What is the count of the unique countries?*
-
-`unique((wine[['country']]))`
-
- [1] "Italy"                  "Portugal"               "US"                     "Spain"                  "France"                
- [6] "Germany"                "Argentina"              "Chile"                  "Australia"              "Austria"               
-[11] "South Africa"           "New Zealand"            "Israel"                 "Hungary"                "Greece"                
-[16] "Romania"                "Mexico"                 "Canada"                 NA                       "Turkey"                
-[21] "Czech Republic"         "Slovenia"               "Luxembourg"             "Croatia"                "Georgia"               
-[26] "Uruguay"                "England"                "Lebanon"                "Serbia"                 "Brazil"                
-[31] "Moldova"                "Morocco"                "Peru"                   "India"                  "Bulgaria"              
-[36] "Cyprus"                 "Armenia"                "Switzerland"            "Bosnia and Herzegovina" "Ukraine"               
-[41] "Slovakia"               "Macedonia"              "China"                  "Egypt"                 
-
-`wine_countries <- unique((wine[['country']]))
-length(wine_countries)`
-
-[1] 44
-
-*What is the max price of wine over the value of 1 dollar?*
-
-`max(wine[['price']])`
-
-[1] NA  (Note: The first time I tried this, it returned an N/A value.  So, I knew I had to filter.)
-
-`wines_over_1 <- subset(wine, price > 0)
-max(wines_over_1[['price']])`
-
-[1] 3300
-
-*Instruction to return all the values in the country vector*
-
-`winemag_data_130k_v2[['country']]`
-
-*Class of column; returns the type of data in this vector; in this case, character*
-
-`class(winemag_data_130k_v2[['country']])`
-
-*This query is meaningless, but was used as a test.  It asks to sum all the values in the points vector.*
-
-`sum(winemag_data_130k_v2[['points']])`
-
-[1] 11495563
-
-*Assign a friendlier name to the data frame; in this case, simply call it "wine."*
-
-`wine <- winemag_data_130k_v2`
-
-*Determine the number of unique values in the country column, and then count how many there are.*
-
-`wine_countries <- unique((wine[['country']]))
-length(wine_countries)`
-
-[1] 44
-
-*Determine the number of unique provinces in the table, and then count them.*
-
-`wine_provinces <- unique((wine[['province']]))
-length(wine_provinces)`
-
-[1] 426
-
-*This instruction was meant to determine the maximum price in the table.  However, it returned an "NA" result.*
-
-`max(wine[['price']])`
-
-[1] NA
-
-*Knowing that there are prices in the field but also some blank/NA values, the code is revised to filter to wines with a value greater than 0, and then determine the maximum.*
-
-`wines_over_1 <- subset(wine, price > 0)
-max(wines_over_1[['price']])`
-
-[1] 3300
-
-*Determining the maximum value in the points vector.*
-
-`max(wine[['points']])`
-
-[1] 100
-
-*Determining the minimum value in the points vector.*
-
-`min(wine[['points']])`
-
-[1] 80
-
-*Determining how many wines have a rating of 100 points.  Result is 19, which matches the query in SQL.*
-
-`wines_rated_100 <- subset(wine, points == 100)
-length((wines_rated_100[['points']]))`
-
-[1] 19
-
-*Determining how many wines have a rating of 80 points.*
-
-`wines_rated_80 <- subset(wine, points == 80)
-length((wines_rated_80[['points']]))`
-
-[1] 397
-
-*Determining how many unique countries are represented in the table.*
-
-`unique((wine[['country']]))
-wine_countries <- unique((wine[['country']]))
-length(wine_countries)`
-
-[1] 44
-
-*Mean point score for table.*
-
-`mean(wine[['points']])`
-
-[1] 88.44714
-
-*Determining max price for wines in this table. Because of NA values, need to create a subset where wine price is greater than 1. Result is 3300.*
-
-`wines_over_1 <- subset(wine, price > 0)
-max(wines_over_1[['price']])`
-
-[1] 3300
-
-*Filtering to show wines from India*
-
-`indian_wines <- subset(wine, country == 'India')
-View(indian_wines)`
+[Clarifying syntax of "OR" statement in SQL](https://www.w3schools.com/sql/sql_and_or.asp)
