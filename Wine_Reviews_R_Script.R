@@ -6,13 +6,13 @@ winemag_data_130k_v2[['country']]
 # Class of column; returns the type of data in this vector; in this case, character
 class(winemag_data_130k_v2[['country']])
 
-# This query is meaningless, but was used as a test.  It asks to sum all the values in the points vector.
+# This query is meaningless, but was used as a test.  It asks to sum all the values in the points vector. Result: [1] 11495563
 sum(winemag_data_130k_v2[['points']])
 
 # Assign a friendlier name to the data frame; in this case, simply call it "wine."
 wine <- winemag_data_130k_v2
 
-# Determine the number of unique values in the country column, and then count how many there are.
+# Determine the number of unique values in the country column, and then count how many there are. Result: [1] 44
 wine_countries <- unique((wine[['country']]))
 length(wine_countries)
 

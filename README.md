@@ -17,18 +17,18 @@ Within SQL and R, the following queries will be made:
 9. Provide all information on wines from India.
 10. What is the max price of wine on this table?
 
-Additionally in R, the following questions will be asked:
+To gain familiarity in R, the following questions will be asked:
 1. How do you assign a variable?
 2. How do you perform a sum on a column?
 3. How do you perform a mean on a column?
 4. How do you filter?
 5. How do you perform a sum/mean on a subset of data?
 
-*Files*
+*Files*  
 A subset of the wine data as well as an R file working with this data has been uploaded to my personal repo.  Zip file: winemag-data-130k-v2.csv; subset for quick scan: winemag-data-subset
 
 # Project Background
-__*Methodology:*__ The thought process behind this project involved taking a large data set and performing basic data operations via SQL and R to glean insights from the data set.  Starting in SQL, I began looking at the most basic asks: How many countries are represented in this data set? What are they? What is the max points given?  The minimum.  I approached this data set with genuine curiosity about what I might find, and the SQL queries followed. Subsequent to feeling more comfortable in SQL, I then turned to R, with the intention of replicating all the SQL queries I had asked. Along the way, I became familiar with why tables and subsets are renamed in R for easier access/recall with further scripts.  There were many commonalities between the snippets.
+__*Methodology:*__ The thought process behind this project involved taking a large data set and performing basic data operations via SQL and R to glean insights from the data set.  Starting in SQL, I began looking at the most basic asks: How many countries are represented in this data set? What are they? What is the max points given?  The minimum? I approached this data set with genuine curiosity about what I might find, and the SQL queries followed. Subsequent to feeling more comfortable in SQL, I then turned to R, with the intention of replicating all the SQL queries I had asked. Along the way, I became familiar with why tables and subsets are renamed in R for easier access/recall with further scripts.  There were many commonalities between the snippets.
 
 # Code Snippets
 
